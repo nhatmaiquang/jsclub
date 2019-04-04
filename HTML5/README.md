@@ -21,22 +21,6 @@ This lab takes approximately 2 hours.
 
 In this task you learn to create a HTML5 document with basic markup.
 
-### Creating a document in C9
-
-In C9, create a new document and name it to **computers80.html**.  Get a HTML5 template (for example) from w3Schools.com-pages.
-
-The resulting HTML5 document contains the definition of an empty web page. First, pay attention to the overall structure of the web page defined in the document. There is a correspondence between a file and a web page. Each static web page corresponds to one HTML5 file.
-
-The page consists of elements, separated by a start tag and end tag. For example, the root element `html` starts with a start tag `<html>` and ends with an end tag `</html>`.
-
-Elements are nested: for instance, the `body` element is inside the `html` element.
-
-The elements follow the HTML5 syntax. The syntax dictates, for example, that:
-- Each HTML5 page contains an `html` root element. All the markup for a web page goes inside this element.
-- Inside the `html` element, there are `head` and `body` elements in this order. In head element, there is background information for showing the web page, usually consumed by browsers. In the example file, there is one piece of information, the title of the page, indicated in `title` element.
-- The content is within `body` element.
-
-
 ### Writing content and structure
 
 Fill the title element with the text you want to appear in the top of the browser window (or as a label in browser tab). It is also a good practice to enter the `meta` element used for character encoding:
@@ -62,7 +46,7 @@ Once the `head` element is ready, add some markup inside the `body` element of t
     <p>The main usage for a home computer was, of course, games. As cool games may not be a valid reason
         for purchasing an expensive gadget, a wide variety of potential uses were invented to satisfy those
         family members who might otherwise be sceptical.</p>
-    
+
     <h2>Legendary computers</h2>
     <p>The best known computer of the eighties was Commodore 64, but there are other computers that gained popularity.</p>
 
@@ -80,7 +64,7 @@ Later, when you amend your code, just hit **Refresh** button in your browser (F5
 
 In your web page, we have used a few of HTML5 block elements.
 
-The direct subelements of the `body` element in the example are block elements. This means that each of these elements uses a rectangular area of the resulting web page. By default, block elements are displayed in a browser in the same order as they appear in the HTML document. That is, the first header element `h1` is displayed before the consequent paragraph `p`, etc. 
+The direct subelements of the `body` element in the example are block elements. This means that each of these elements uses a rectangular area of the resulting web page. By default, block elements are displayed in a browser in the same order as they appear in the HTML document. That is, the first header element `h1` is displayed before the consequent paragraph `p`, etc.
 
 Some block elements can be nested. However, it is not legal to nest headers and paragraphs between each other.
 
@@ -106,7 +90,7 @@ You should validate frequently. Validation often helps you to spot problems, as 
 
 ### Lists
 
-Now, add a list inside your web page. Insert the following lines of code after the paragraph describing clever uses for home computers: 
+Now, add a list inside your web page. Insert the following lines of code after the paragraph describing clever uses for home computers:
 
 ```html
     <p>Some reasons often mentioned were:</p>
@@ -152,7 +136,7 @@ Now, add an image of a computer into the document. Add the following lines of co
     <figure>    
         <img src="img/computer.png" alt="A computer with a monitor"/>
         <figcaption>Photo: Piotr Siedlecki, public domain via http://www.publicdomainpictures.net.</figcaption>
-    </figure> 
+    </figure>
 ```
 
 
@@ -206,7 +190,7 @@ Commodore 64
   Current status
     There's still a wide community of C64 enthusiasts. There are numerous C64 emulators,
     such as CCS64 (link to http://www.ccs64.com/) and Frodo (link to http://frodo.cebix.net/).
-    
+
   Gaming device
     Best games
       Commodore 64 was notorious for its magnificent games. Some of the best include:
@@ -217,7 +201,7 @@ Commodore 64
       - Ultima 5
     Joysticks
       Several joysticks were manufactured for Commodore 64, such as Quickshot II.
-    
+
 Back to Main page (link)
 
 ```
@@ -249,7 +233,7 @@ Verify that you understand the elements used in marking up the table:
 
 ## 3 New features, semantic elements
 
-Two benefits of using HTML5 are easier inclusion of multimedia content and better semantic markup possibilities for the content. 
+Two benefits of using HTML5 are easier inclusion of multimedia content and better semantic markup possibilities for the content.
 
 
 ### Audio and video ###
@@ -274,7 +258,7 @@ The inclusion of semantic elements in HTML5 makes the code more manageable, as t
 
 Furthermore, the use of semantic elements makes documents more accessible to screen readers etc.
 
-The summary of some key semantic elements to describe the contents of the web page is below, based on the [W3C documentation](http://www.w3.org/TR/html5/sections.html). 
+The summary of some key semantic elements to describe the contents of the web page is below, based on the [W3C documentation](http://www.w3.org/TR/html5/sections.html).
 
 | Element | Intended content                                           | Example                  |
 |---------|------------------------------------------------------------|--------------------------|
