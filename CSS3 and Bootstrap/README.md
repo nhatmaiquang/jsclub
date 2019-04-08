@@ -13,7 +13,7 @@ From now on, we use CSS as a synonym for CSS3, which is the newest version of th
 In the lab you do the following tasks:
 
 1. Perform basic formatting (colors, fonts, etc.) of your web pages.
-1. Use CSS classes and identifiers to pick the correct elements 
+1. Use CSS classes and identifiers to pick the correct elements
 1. Fine-tune your selection by picking nested elements
 1. Use CSS box model to define the appearance of your web pages.
 1. Position elements within a web page.
@@ -33,7 +33,7 @@ This approach makes a clear separation between content and representation. The a
 
 ### Creating and linking a style sheet
 
-Create a new file in Cloud9 and name it **simple.css**.
+Create a new file and name it **simple.css**.
 
 In the resulting CSS file, replace the placeholder content with the following:
 ```css
@@ -52,7 +52,7 @@ Examine the CSS file and verify that you understand its contents. Pay attention 
 - Followed by the element names (called selectors), there is a block starting with `{` and ending with `}`. This block contains a list of properties.
 - The first rule (applicable to the `body` element) contains one property for setting the font.
 - The second rule (applicable to major headers) contains two properties, one for setting blue font color and the other for bold text.
-- The rules are automatically in effect in the nested subelements, so the font setting for `body` element applies to all elements in the page, including headers, lists, and paragraphs. 
+- The rules are automatically in effect in the nested subelements, so the font setting for `body` element applies to all elements in the page, including headers, lists, and paragraphs.
 - The fonts are given as a list of alternatives. The browser uses the first font in the list that it is capable of. The list should always end in a generic font such as `serif` or `sans-serif`.
 
 Even though the CSS file is present, it has no effect as it is not currently linked to any HTML document.
@@ -154,11 +154,11 @@ Go to the validation page, and validate the file you created. If no errors are f
 You need the aforementioned file `simple.css`.
 
 Using the CSS documentation, make the following amendments to the CSS file:
-- Add a border around each list and change the color of list items to dark grey. 
+- Add a border around each list and change the color of list items to dark grey.
 - Indent the paragraphs and lists.
 - Make figure captions smaller and use bold face.
 - Set a background color for the page.
-    
+
 
 ## 2 Classes and identifiers
 
@@ -317,7 +317,7 @@ The first two (`after` and `before`) are normally used with `content` property t
 
 ### Location of CSS
 
-In all the examples above, the CSS rules have been located in a single CSS file. It is the best place for CSS rules from modularity's point of view. 
+In all the examples above, the CSS rules have been located in a single CSS file. It is the best place for CSS rules from modularity's point of view.
 
 Technically, there are other options for placing CSS rules, even though they are considered bad practice.
 
@@ -399,8 +399,8 @@ You can simply right-click on an element and select **Inspect element**. Try it 
 
 1. The file **box_assignment.png** in the lab's `img` folder contains an image of intended appearance for a web-page. Using CSS box model, construct an HTML page and the associated CSS file that reproduce the appearance of the image.
 
-    Note: in the lab's **img** folder, you also find the public domain image **berries.png** (author Scott Bauer, via http://commons.wikimedia.org) needed in the assignment. 
-    
+    Note: in the lab's **img** folder, you also find the public domain image **berries.png** (author Scott Bauer, via http://commons.wikimedia.org) needed in the assignment.
+
     ![(Alternatively, you see the image embedded if you open this assignment sheet in a separate browser window).](img/box_assignment.png)
 
 
@@ -458,11 +458,11 @@ Next, we make a floating fact box that contains multiple elements. Add the follo
     <li>Onions have been used in cooking for thousands of years.</li>
     <li>89% of onion's content is water.</li>
 </ul>
-</section> 
+</section>
 
 ```
 
-This time, the floating entity consists of two elements: a paragraph (`p`) and an unordered list (`ul`). Thus, we need a special container element that contains both the paragraph and the list. 
+This time, the floating entity consists of two elements: a paragraph (`p`) and an unordered list (`ul`). Thus, we need a special container element that contains both the paragraph and the list.
 
 There are two alternatives for the container: either a generic `div` element, or a more semantic `section` element. As the header and the list in the fact box clearly form a semantic entity, it is advisable to use the latter.
 
@@ -492,11 +492,11 @@ Add the navigation information (using the HTML5 `nav` element) into the bottom o
 
 ```html
 <nav>
-  <a href="1.html">Nutrition</a> 
-  <a href="2.html">Recipes</a> 
-  <a href="3.html">Growing</a> 
+  <a href="1.html">Nutrition</a>
+  <a href="2.html">Recipes</a>
+  <a href="3.html">Growing</a>
   <a href="4.html">History</a>
-</nav> 
+</nav>
 ```
 
 Note that the files that the links point to do not exist. We could add them later.
@@ -529,9 +529,9 @@ body {
 1. Open file **columns.html**. Generate a style sheet **columnstyles.css** where the paragraphs are displayed in:
     a. two columns
     b. three columns
-    
+
     Hint: search for CSS properties containing the word `column`. Currently, there are browser restrictions and inconsistencies in displaying multi-column content, but the workarounds are well documented. Try to take these into account in your CSS.
-    
+
 2. In Lab 3 (HTML5), you created a home page of fictional Jane or John Doe, or yourself (If you didn't do that lab, quickly generate a home page). Build a CSS file for the home page that displays the information in a nicely formatted fashion. Position the image as a floating element in either edge of the page.
 
 
@@ -551,7 +551,7 @@ Examine, how the hierarchical menu was created using plain CSS. Note that the li
 
 Important things to note:
 - List bullets are removed by setting `list-style: none`.
-- Second-level list items are set, by default, hidden: `visibility:hidden`. 
+- Second-level list items are set, by default, hidden: `visibility:hidden`.
 - Whenever the mouse pointer hovers over the first-level list item, the second level list-item is set visible. The selector `nav ul li:hover > li` points to those `li` items that are descendants of `nav`, `ul`, and (one that a mouse hovers over) `li` elements.
 
 
@@ -578,7 +578,7 @@ In your HTML file, you notice links to the bootstrap CSS files that are included
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 ```
 
-In the `head` element of **game.html**, there are some additional elements for character encoding and rendering information. 
+In the `head` element of **game.html**, there are some additional elements for character encoding and rendering information.
 
 ### Adding content
 
@@ -651,8 +651,3 @@ Add more content to the page and test the outcome in a browser. Test responsiven
 1. Add the following elements into the **game.html** page:
     - a well (a gray area with rounded edges), that contains facts about Mars.
     - home, previous and next buttons (functionality not required). Use pager class.
-    
-
-
-
-
